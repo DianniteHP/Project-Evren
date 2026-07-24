@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ba1pylps5g46u"]
+
+[ext_resource type="PackedScene" uid="uid://c1os7i2s0uyr5" path="res://Planet.tscn" id="1_vonw3"]
+[ext_resource type="PackedScene" uid="uid://dul0st3rtkh88" path="res://character.tscn" id="2_oi3di"]
+
+[node name="Level" type="Node2D" unique_id=1325070655]
+
+[node name="Planet" parent="." unique_id=2131737733 instance=ExtResource("1_vonw3")]
+position = Vector2(320, 353)
+
+[node name="Planet2" parent="." unique_id=1018236177 instance=ExtResource("1_vonw3")]
+position = Vector2(1112, 100)
+
+[node name="character" parent="." unique_id=1348613694 instance=ExtResource("2_oi3di")]
+position = Vector2(200, 289)
+
+[connection signal="body_entered" from="Planet2" to="character" method="_on_planet_2_body_entered"]
