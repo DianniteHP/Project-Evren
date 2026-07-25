@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://ba1pylps5g46u"]
+
+[ext_resource type="PackedScene" uid="uid://c1os7i2s0uyr5" path="res://Planet.tscn" id="1_vonw3"]
+[ext_resource type="PackedScene" uid="uid://dul0st3rtkh88" path="res://character.tscn" id="2_oi3di"]
+[ext_resource type="PackedScene" uid="uid://btlwwf6vbim4k" path="res://camera.tscn" id="3_oi3di"]
+
+[node name="Level" type="Node2D" unique_id=1325070655]
+
+[node name="Planet" parent="." unique_id=2131737733 instance=ExtResource("1_vonw3")]
+position = Vector2(437, 327)
+mass = 0
+
+[node name="Planet2" parent="." unique_id=213811962 instance=ExtResource("1_vonw3")]
+position = Vector2(1687, 762)
+mass = 0
+collision_scale = 2.0
+
+[node name="Planet3" parent="." unique_id=454687563 instance=ExtResource("1_vonw3")]
+position = Vector2(504, 1485)
+mass = 0
+collision_scale = 1.5
+
+[node name="Planet4" parent="." unique_id=1072959631 instance=ExtResource("1_vonw3")]
+position = Vector2(-901, 1374)
+mass = 0
+collision_scale = 1.25
+
+[node name="character" parent="." unique_id=2006452031 instance=ExtResource("2_oi3di")]
+position = Vector2(-183, 302)
+scale = Vector2(3, 3)
+
+[node name="Camera" parent="character" unique_id=955130849 instance=ExtResource("3_oi3di")]
+metadata/_edit_lock_ = true

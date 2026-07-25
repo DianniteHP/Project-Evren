@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c1os7i2s0uyr5"]
+
+[ext_resource type="Texture2D" uid="uid://bph3y2mwnqukp" path="res://icon.svg" id="1_2hiue"]
+[ext_resource type="Script" uid="uid://bt350xpe3mvyh" path="res://planet.gd" id="1_8g7i6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xm0u0"]
+radius = 484.17456
+
+[node name="Planet" type="Area2D" unique_id=2131737733]
+gravity_space_override = 3
+gravity_point = true
+gravity = 500.0
+script = ExtResource("1_8g7i6")
+mass = null
+radius = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1402747494]
+shape = SubResource("CircleShape2D_xm0u0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=537679702]
+texture = ExtResource("1_2hiue")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
