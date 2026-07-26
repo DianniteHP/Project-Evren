@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dam01nbgwutaa"]
+
+[ext_resource type="Script" uid="uid://b0gt6lws81l3x" path="res://control.gd" id="1_0fbet"]
+
+[node name="Control" type="Control" unique_id=494773301]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="MenuBar" type="MenuBar" parent="." unique_id=1658746221]
+layout_mode = 0
+offset_left = 429.177
+offset_top = 153.18146
+offset_right = 710.0
+offset_bottom = 361.0
+
+[node name="ItemList" type="ItemList" parent="MenuBar" unique_id=786354384]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.989
+anchor_top = -0.45800003
+anchor_right = 0.163
+anchor_bottom = 1.121
+offset_left = 30.556946
+offset_top = 48.999443
+offset_right = -33.951153
+offset_bottom = -22.146057
+item_count = 2
+item_0/text = "item1"
+item_1/text = "item2"
