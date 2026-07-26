@@ -1,0 +1,38 @@
+Inspiration games:
+
+Orbital from Pico 8 
+- orbit prediction
+
+- nearby star system map
+-- view distance to them in ly
+-- world is 3d, viewewd from above ; when switched to map, map is 3d, but the only visible parts are the ones that the player has already seen
+
+- collect fual from planets
+-- what if it can be collected from asteroids or space dust
+
+
+
+
+Kerbal Space Program
+- different propulsions :
+	normal
+	ion
+	solar wind
+- mission planer AKA automated or nearly automated
+- sandbox level freedom of building aircraft and etc
+
+
+Space Station 14
+- 2d view of the spaceship inside
+- player can walk inside and interact with it
+- player can upgrade set of skills, each with pros and cons
+-> minimum 2 players required for confomrtable playthrough
+
+Factorio - 
+- building a rocket from scratch
+- advanced material crafting system
+
+
+
+
+	
