@@ -14,10 +14,38 @@ config/name="Project-Evren"
 run/main_scene="res://character.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+run/default_font_multichannel_signed_distance_field=false
+run/stdout/print_fps=false
+run/warnings/return_value_discarded=0
+run/warnings/untyped_declaration=1
+run/warnings/inferred_declaration=0
 
 [autoload]
 
 Global="*uid://lxnmvkciqaq8"
+
+[debug]
+
+settings/stdout/print_fps=true
+gdscript/warnings/untyped_declaration=1
+gdscript/warnings/inferred_declaration=2
+gdscript/warnings/return_value_discarded=1
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=480
+window/size/mode=3
+window/size/resizable=false
+window/size/borderless=true
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="canvas_items"
+window/stretch/scale_mode="integer"
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
 
 [input]
 

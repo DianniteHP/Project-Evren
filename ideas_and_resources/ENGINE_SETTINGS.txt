@@ -1,0 +1,5 @@
+10 Things I Wish I Knew Before Starting a Large Godot Project (Cost Me Months)
+Fat Earth Studios https://www.youtube.com/watch?v=zLdTvkLsmgA
+- Display resolution & scaling
+- Godot  warns if var is dynamic AKA with an undeclared type
+- debug fonts are the same res as the original screen res

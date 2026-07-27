@@ -1,5 +1,3 @@
-Inspiration games:
-
 Orbital from Pico 8 
 - orbit prediction
 
@@ -31,6 +29,9 @@ Space Station 14
 Factorio - 
 - building a rocket from scratch
 - advanced material crafting system
+
+"The Hitchhiker's Guide to The Galaxy"
+- lore with that forgotten planet, where only the deffence mechanism, which is very old, remained, and not the civilization itself
 
 
 
