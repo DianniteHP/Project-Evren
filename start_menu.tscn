@@ -2,28 +2,35 @@
 
 [ext_resource type="Script" uid="uid://bvn8mutefuehr" path="res://start_menu.gd" id="1_jwbto"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j17su"]
-bg_color = Color(3.7541986e-06, 0.70019096, 0.57916117, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfxay"]
+bg_color = Color(0.2594898, 0.7033282, 0.36150083, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wojda"]
 bg_color = Color(0.18717614, 0.18717614, 0.18717614, 1)
 
 [node name="Start Menu" type="Control" unique_id=1409291724]
+custom_minimum_size = Vector2(640, 360)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource("1_jwbto")
 
-[node name="Panel" type="Panel" parent="." unique_id=263134150]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=435489774]
+custom_minimum_size = Vector2(640, 360)
 layout_mode = 0
-offset_right = 1169.0
-offset_bottom = 666.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_j17su")
+offset_left = -2.0
+offset_top = -1.0
+offset_right = 638.0
+offset_bottom = 359.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cfxay")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1661429900]
+custom_minimum_size = Vector2(640, 360)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -39,7 +46,9 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1908322941]
 layout_mode = 2
-theme_override_constants/separation = 25
+size_flags_horizontal = 4
+size_flags_vertical = 4
+offset_transform_enabled = true
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1570776847]
 layout_mode = 2
@@ -47,6 +56,8 @@ theme_override_colors/font_color = Color(0.80223405, 0.51346016, 0, 1)
 theme_override_font_sizes/font_size = 75
 theme_override_styles/normal = SubResource("StyleBoxFlat_wojda")
 text = " START MENU "
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Button" type="Button" parent="MarginContainer/VBoxContainer" unique_id=696958298]
 layout_mode = 2

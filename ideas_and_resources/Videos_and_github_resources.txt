@@ -11,3 +11,9 @@ Dylan Falconer  https://www.youtube.com/watch?v=eUHVN7kgp_8
 - break down into smaller actions and dependencies
 - derive what depends on what
 - sort into a tree-like structure
+
+Factorio in godot
+https://github.com/JACKADUX/godot-Factorio
+
+Collection of free gamedev tools
+https://github.com/substain/tools-for-gamedev
