@@ -1,3 +1,3 @@
 extends Node
 
-var acceleration :int = 0
+var speed :int = 0

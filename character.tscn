@@ -39,16 +39,15 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yxww1")
 }],
-"loop": true,
+"loop": 1,
 "name": &"engineEffect",
 "speed": 5.0
 }]
 
 [node name="character" type="RigidBody2D" unique_id=2006452031]
+z_index = 3
 scale = Vector2(2, 2)
 script = ExtResource("1_pjt0s")
-rotation_speed = 2.0
-thrust_power = 300.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=352529839]
 texture = ExtResource("2_pjt0s")

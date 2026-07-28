@@ -1,7 +1,7 @@
 extends RigidBody2D
 
-@export var rotation_speed :float = 3.0
-@export var thrust_power :float = 600.0
+@export var rotation_speed :float = 2.0
+@export var thrust_power :float = 300.0
 
 
 func _physics_process(delta: float) -> void:
@@ -16,3 +16,5 @@ func _physics_process(delta: float) -> void:
 	else:
 		$AnimatedSprite2D.hide()
 		$AnimatedSprite2D.stop()
+	Global.speed = linear_velocity.length()
+	

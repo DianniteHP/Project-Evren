@@ -1,24 +1,13 @@
-extends Area2D
+extends StaticBody2D
 
-@export var mass :int
-@export var collision_scale :float = 1
-
-var is_orbiting :bool = false
+@export var planet_size :float = 1
+@export var texture :Texture2D
+@export var visuals :Sprite2D
+@export var solid_collision :CollisionShape2D
+@export var gravity_collision :CollisionShape2D
 
 func _ready() -> void:
-	self.scale = Vector2(collision_scale, collision_scale)
-
-
-
-#func _on_body_entered(body: CharacterBody2D) -> void:
-	#is_orbiting = true
-	#orbiting(body)
-#
-#func orbiting(body :CharacterBody2D):
-	#while is_orbiting == true:
-		#body.position += Vector2(5,0)
-		#await get_tree().create_timer(0.05).timeout
-		#print("something")
-#
-#func _on_body_exited(body: Node2D) -> void:
-	#is_orbiting = false
+	visuals.scale = Vector2(planet_size, planet_size)
+	solid_collision.scale = Vector2(planet_size, planet_size)
+	gravity_collision.scale = 4* Vector2(planet_size, planet_size)
+	visuals.texture = texture

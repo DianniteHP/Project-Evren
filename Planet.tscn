@@ -1,24 +1,31 @@
 [gd_scene format=3 uid="uid://c1os7i2s0uyr5"]
 
-[ext_resource type="Texture2D" uid="uid://bph3y2mwnqukp" path="res://icon.svg" id="1_2hiue"]
 [ext_resource type="Script" uid="uid://bt350xpe3mvyh" path="res://planet.gd" id="1_8g7i6"]
+[ext_resource type="Texture2D" uid="uid://1dt5cvibkk7o" path="res://Planets/dryhotplanet.png" id="2_8g7i6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xm0u0"]
 radius = 484.17456
 
-[node name="Planet" type="Area2D" unique_id=2131737733]
+[sub_resource type="CircleShape2D" id="CircleShape2D_wojda"]
+radius = 156.4161
+
+[node name="Planet" type="StaticBody2D" unique_id=978765556 node_paths=PackedStringArray("visuals", "solid_collision", "gravity_collision")]
+script = ExtResource("1_8g7i6")
+visuals = NodePath("Visuals")
+solid_collision = NodePath("SolidCollision")
+gravity_collision = NodePath("GravitationalForce/GravitationRadius")
+
+[node name="Visuals" type="Sprite2D" parent="." unique_id=537679702]
+z_index = 1
+texture = ExtResource("2_8g7i6")
+
+[node name="GravitationalForce" type="Area2D" parent="." unique_id=1724944816]
 gravity_space_override = 3
 gravity_point = true
 gravity = 500.0
-script = ExtResource("1_8g7i6")
-mass = null
-radius = null
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1402747494]
+[node name="GravitationRadius" type="CollisionShape2D" parent="GravitationalForce" unique_id=1402747494]
 shape = SubResource("CircleShape2D_xm0u0")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=537679702]
-texture = ExtResource("1_2hiue")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
-[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[node name="SolidCollision" type="CollisionShape2D" parent="." unique_id=1134215882]
+shape = SubResource("CircleShape2D_wojda")
