@@ -34,6 +34,3 @@ Factorio -
 - lore with that forgotten planet, where only the deffence mechanism, which is very old, remained, and not the civilization itself
 
 
-
-
-	

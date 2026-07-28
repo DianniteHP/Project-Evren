@@ -14,7 +14,7 @@ When the player crashes the game is similar to Factorio with the difference that
 
 While building, predators from the planet periodically attack MC
 
-Main goa lof the game is to return to Earth, by hoppiong between solar systems a few times
+Main goal of the game is to return to Earth, by hoppiong between solar systems a few times
 
 
 
