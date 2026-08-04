@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bl3sruue4xh0v"]
+
+[ext_resource type="PackedScene" uid="uid://be5mswmdf7n8j" path="res://player.tscn" id="1_u52ul"]
+[ext_resource type="Texture2D" uid="uid://mk4okaj7oke" path="res://graphics/Backgrounds/pixelart_starfield_diagonal_diffraction_spikes.png" id="1_vonw3"]
+[ext_resource type="PackedScene" uid="uid://dycerid5081qm" path="res://meteor.tscn" id="3_oi3di"]
+
+[node name="Level" type="Node2D" unique_id=1599279267]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1576623507]
+position = Vector2(1054, 543)
+scale = Vector2(6.8499994, 6.8499994)
+texture = ExtResource("1_vonw3")
+
+[node name="Player" parent="." unique_id=560307949 instance=ExtResource("1_u52ul")]
+position = Vector2(968, 591)
+scale = Vector2(4, 4)
+
+[node name="Meteor" parent="." unique_id=977333706 instance=ExtResource("3_oi3di")]

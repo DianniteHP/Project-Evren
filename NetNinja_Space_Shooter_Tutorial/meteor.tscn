@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dycerid5081qm"]
+
+[ext_resource type="Texture2D" uid="uid://m0on6j5intm4" path="res://graphics/Foozle_2DS0015_Void_EnvironmentPack/Asteroids/PNGs/Asteroid 01 - Base.png" id="1_n51xl"]
+
+[node name="Meteor" type="Node2D" unique_id=977333706]
+
+[node name="Texture" type="Sprite2D" parent="." unique_id=318168997]
+texture = ExtResource("1_n51xl")

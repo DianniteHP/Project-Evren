@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://be5mswmdf7n8j"]
+
+[ext_resource type="Texture2D" uid="uid://didn80nxuvwe1" path="res://graphics/Foozle_2DS0011_Void_MainShip/Main Ship/Main Ship - Bases/PNGs/Main Ship - Base - Full health.png" id="1_4flbx"]
+
+[node name="Player" type="Node2D" unique_id=560307949]
+
+[node name="Texture" type="Sprite2D" parent="." unique_id=2140639560]
+texture = ExtResource("1_4flbx")
