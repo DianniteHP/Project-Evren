@@ -7,7 +7,8 @@ extends StaticBody2D
 @export var gravityCollision :CollisionShape2D
 
 func _ready() -> void:
-	visuals.scale = Vector2(planetSize, planetSize)
 	solidCollision.scale = Vector2(planetSize, planetSize)
 	gravityCollision.scale = 4* Vector2(planetSize, planetSize)
+	
+	visuals.scale = Vector2(planetSize, planetSize)
 	visuals.texture = texture

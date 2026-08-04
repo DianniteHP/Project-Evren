@@ -1,2 +1,0 @@
-pixel art sprite sheets for planets
-https://deep-fold.itch.io/pixel-planet-generator
